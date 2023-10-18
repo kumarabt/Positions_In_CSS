@@ -1,0 +1,19 @@
+Z-index in CSS is a property that is used to control the stacking order of elements on a webpage that
+occours in diffrent layers. It determines the order in which they occour in diffrent layers.
+
+Element with the highest z-index value is displayed at the top of the stack of diffrent layers i.e.
+above all the elements which have lower z-index value with respect to it.
+
+If the multiple elements have same z-index, the order in which they occour in their html document determines
+their stacking order in diffrent layers on webpage. In this case of elements having same z-index value,
+the element defined later in the html document occours at the top of the stack and will be at the top
+layer.
+
+And, if no z-index property is defined for elements then bydefault the stacking order is determined by 
+their order in html document and their parent-child relationship in the dom. Elements later in the document
+are typically displayed above their ancestors.
+
+EXAMPLE:  .element{
+                   position: absolute;
+                   z-index:2;
+                  }

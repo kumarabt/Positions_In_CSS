@@ -1,0 +1,19 @@
+The main diffrence between in absolute and relative positing is that:
+
+1. When you make any element in a dom position relative it can now be relatively positioned now w.r.t. its
+orignal position in webpage but when we make an element position absolute it bydefault gets placed at 
+(0,0) i.e. wrt top left position of its parent and if parent is not mentioned it places at (0,0) w.r.t 
+body/root.
+
+2. Relative positining element on giving attributes like left, right, top and bottom doesn't impact their
+siblings and shift their position in ***same layer*** in webpage.
+NOTE: since the place in browser where you render is w.r.t. your siblings and using position 
+             relative only when you use top, left, right, bottom will not impact the relative position of 
+             your sibling but any other dimension like margin, padding, width,height  etc. will impact 
+             the position of your sibling.
+
+But, that is not the case with absolute positing as the elements here are in***diffrent layers*** 
+according to their z-index and they also doesnt affect anything on main layer while shifting their position.
+
+3. Absolute element shifts w.r.t. nearest relative parent that means the nearest parent should be marked
+position: relative if we want the Absolute element to shift w.r.t to it.

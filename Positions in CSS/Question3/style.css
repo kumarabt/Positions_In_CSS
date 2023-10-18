@@ -1,0 +1,15 @@
+img{
+    float:right;
+    position:relative;
+    top:10%;
+}
+
+.parent{
+    width:90vw;
+    height:300px;
+    border:2px solid black;
+    background-color:rgb(244, 219, 187);
+    box-sizing:border-box;
+    padding:20px;
+}
+
